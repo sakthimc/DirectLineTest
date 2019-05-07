@@ -1,0 +1,139 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "check whether vehicle exists in portal using REGNO",
+        "description": "",
+        "id": "as-an-insurance-portal-company-;check-whether-vehicle-exists-in-portal-using-regno;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7442633574,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I launch the insurance portal",
+            "match": {
+              "location": "MyStepdefs.iLaunchTheInsurancePortal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1139639921,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the vehicle \"OV12UYY\" and click submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OV12UYY",
+                  "offset": 21
+                }
+              ],
+              "location": "MyStepdefs.iEnterTheVehicleAndClickSubmit(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2558826783,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the \"OV12UYY\" insurance details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OV12UYY",
+                  "offset": 18
+                }
+              ],
+              "location": "MyStepdefs.iShouldSeeTheInsuranceDetails(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@vehicleExistsTest"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "check whether vehicle exists in portal using REGNO",
+        "description": "",
+        "id": "as-an-insurance-portal-company-;check-whether-vehicle-exists-in-portal-using-regno;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5159067885,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I launch the insurance portal",
+            "match": {
+              "location": "MyStepdefs.iLaunchTheInsurancePortal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1144281375,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the vehicle \"YU13ERS\" and click submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YU13ERS",
+                  "offset": 21
+                }
+              ],
+              "location": "MyStepdefs.iEnterTheVehicleAndClickSubmit(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1109559174,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the \"YU13ERS\" insurance details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YU13ERS",
+                  "offset": 18
+                }
+              ],
+              "location": "MyStepdefs.iShouldSeeTheInsuranceDetails(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@vehicleExistsTest"
+          }
+        ]
+      }
+    ],
+    "name": "As an insurance portal company,",
+    "description": "  I would like to check whether a vehicle exists\n  so that I can check its insurance validity",
+    "id": "as-an-insurance-portal-company-",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/InsuranceCoverChecker.feature",
+    "tags": []
+  }
+]
