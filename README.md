@@ -6,6 +6,8 @@ The build tool I have used is "Maven".
  - feature files can be found under /src/test/resources/features
  - stepdefinitions can be found under /src/test/java/stepDefinitions
  - runner class is in /src/test/java/runner
+ - cucumber reports can be found in /target
+ - it also has cucumber.json report which is built for CI tool
  
 # Project setup on local
 1. Git clone this repo onto your local machine
