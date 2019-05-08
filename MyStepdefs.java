@@ -1,3 +1,7 @@
+/**
+ * Author: SathyaPriya Ramakrisshnan
+ * Glue code Implementation for feature file
+ */
 package stepDefinitions;
 
 import PageObjects.DealerPortalPage;
@@ -47,10 +51,8 @@ public class MyStepdefs {
         if (regNumber.equals("OV12UYY")) {
             dealerPortalPage = new DealerPortalPage(driver);
             dealerPortalPage.getVehicleInsuranceDetails();
-            //driver.close();
         } else {
             System.out.println("Do nothing");
-           // driver.close();
         }
     }
 
